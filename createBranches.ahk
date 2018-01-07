@@ -22,6 +22,6 @@ else
 				MsgBox, Space is not allowed
 				return
 			}
-		run C:\Users\mkkna\Desktop\createBranches.bat %ticket% %parentBranch%
+		run .\createBranches.bat %ticket% %parentBranch%
 	}
 
