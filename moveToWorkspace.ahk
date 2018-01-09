@@ -8,4 +8,7 @@ SetKeyDelay, 75
 Send, {LWin down}{Tab}{LWin up}
 Sleep, 200
 Send, {LShift down}{F10}{LShift up}
-Send, m
+Sleep, 100
+Send, p
+Sleep, 100
+Send, {Enter}

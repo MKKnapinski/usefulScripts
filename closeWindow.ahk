@@ -8,4 +8,5 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SendInput, !{F4}
 #IfWinActive, ahk_class ConsoleWindowClass
 WinClose, A
+Sleep, 500
 return

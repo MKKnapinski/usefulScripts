@@ -21,7 +21,10 @@ if (clip_one = "")
 
 old_clip := ClipboardAll
 Clipboard := clip_one
+ClipWait, 2
+clip_one := clip_one
 Send, ^v
+Sleep, 500
 Clipboard := old_clip
 return
 
@@ -41,7 +44,9 @@ if (clip_two = "")
 
 old_clip := ClipboardAll
 Clipboard := clip_two
+ClipWait, 2
 Send, ^v
+Sleep, 500
 Clipboard := old_clip
 return
 
@@ -61,6 +66,8 @@ if (clip_three = "")
 
 old_clip := ClipboardAll
 Clipboard := clip_three
+ClipWait, 2
 Send, ^v
+Sleep, 500
 Clipboard := old_clip
 return
