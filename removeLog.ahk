@@ -12,6 +12,7 @@ Clipboard := message1
 ClipWait, 2
 Send, ^v
 Send, {Left}{Left}{Left}{Left}
+Sleep, 200
 Clipboard := old_clip
 ClipWait, 2
 return

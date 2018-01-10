@@ -7,7 +7,10 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ^!F1::
 InputBox, ticket, Create Branches, TICKET:.
 InputBox, parentBranch, Create Branches, PARENT BRANCH.
-
+if ticket = ""
+{
+return
+}
 FoundPos := RegExMatch(ticket, " ")
 if FoundPos != 0
 	{
