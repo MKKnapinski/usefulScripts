@@ -12,3 +12,5 @@ Sleep, 100
 Send, p
 Sleep, 100
 Send, {Enter}
+Sleep, 300
+return

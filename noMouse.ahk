@@ -1,4 +1,4 @@
-#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
@@ -40,7 +40,7 @@ CoordMode Mouse, Screen
 SendMode Input			; If not working, try: SendMode Input
 
 ; --- GENERAL CONFIGURATION ----------------------------------------------------
-  ConstantSpeed := 5      ; Pixels to move when Numpad0 is held down
+  ConstantSpeed := 3      ; Pixels to move when Numpad0 is held down
   MinSpeed      := 20      ; Pixels to move at the beginning of the movement
   MaxSpeed      := 20      ; Pixels to move at the fastest inertia
   Inertia       := 0    ; How fast should we increase speed (higher=faster, 0=none)
