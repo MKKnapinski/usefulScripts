@@ -5,8 +5,15 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #NoTrayIcon
 
 #+q::
-SendInput, !{F4}
-#IfWinActive, ahk_class ConsoleWindowClass
+if WinActive("ahk_class ConsoleWindowClass")
+{
 WinClose, A
 Sleep, 1000
 return
+}
+else
+{
+SendInput, !{F4}
+Sleep, 1000
+return
+}
