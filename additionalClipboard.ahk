@@ -71,3 +71,69 @@ Send, ^v
 Sleep, 500
 Clipboard := old_clip
 return
+
+RAlt & Numpad4::
+old_clip := ClipboardAll
+Clipboard := ""
+Send, ^c
+ClipWait, 2
+clip_four := Clipboard
+Clipboard := old_clip
+return
+
+
+RCtrl & Numpad4::
+if (clip_four = "")
+	return
+
+old_clip := ClipboardAll
+Clipboard := clip_four
+ClipWait, 2
+Send, ^v
+Sleep, 500
+Clipboard := old_clip
+return
+
+RAlt & Numpad5::
+old_clip := ClipboardAll
+Clipboard := ""
+Send, ^c
+ClipWait, 2
+clip_five := Clipboard
+Clipboard := old_clip
+return
+
+
+RCtrl & Numpad5::
+if (clip_five = "")
+	return
+
+old_clip := ClipboardAll
+Clipboard := clip_five
+ClipWait, 2
+Send, ^v
+Sleep, 500
+Clipboard := old_clip
+return
+
+RAlt & Numpad6::
+old_clip := ClipboardAll
+Clipboard := ""
+Send, ^c
+ClipWait, 2
+clip_six := Clipboard
+Clipboard := old_clip
+return
+
+
+RCtrl & Numpad6::
+if (clip_six = "")
+	return
+
+old_clip := ClipboardAll
+Clipboard := clip_six
+ClipWait, 2
+Send, ^v
+Sleep, 500
+Clipboard := old_clip
+return

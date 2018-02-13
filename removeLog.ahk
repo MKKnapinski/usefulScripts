@@ -16,3 +16,16 @@ Sleep, 200
 Clipboard := old_clip
 ClipWait, 2
 return
+
+^+\::
+old_clip := ClipboardAll
+Clipboard := ""
+message1 = {{ '' | translate }}
+Clipboard := message1
+ClipWait, 2
+Send, ^v
+Send, {Left}{Left}{Left}{Left}{Left}{Left}{Left}{Left}{Left}{Left}{Left}{Left}{Left}{Left}{Left}{Left}
+Sleep, 200
+Clipboard := old_clip
+ClipWait, 2
+return

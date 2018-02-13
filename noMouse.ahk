@@ -2,6 +2,8 @@
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+#NoTrayIcon
+
 ;-------------------------------------------------------------------------------
 ; No Mouse Today! 0.20
 ; A Numpad Mouse Replacement (for days without a mouse...)
@@ -40,10 +42,10 @@ CoordMode Mouse, Screen
 SendMode Input			; If not working, try: SendMode Input
 
 ; --- GENERAL CONFIGURATION ----------------------------------------------------
-  ConstantSpeed := 3      ; Pixels to move when Numpad0 is held down
-  MinSpeed      := 20      ; Pixels to move at the beginning of the movement
-  MaxSpeed      := 20      ; Pixels to move at the fastest inertia
-  Inertia       := 0    ; How fast should we increase speed (higher=faster, 0=none)
+  ConstantSpeed := 1      ; Pixels to move when Numpad0 is held down
+  MinSpeed      := 1    ; Pixels to move at the beginning of the movement
+  MaxSpeed      := 30      ; Pixels to move at the fastest inertia
+  Inertia       := 0.5   ; How fast should we increase speed (higher=faster, 0=none)
   InertiaDelay  := 0      ; Number of movements to wait before starting inertia
   WheelSleep    := 80     ; MSeconds to sleep between wheel sends
   MouseSleep    := 10     ; MSeconds to sleep between moving the mouse
